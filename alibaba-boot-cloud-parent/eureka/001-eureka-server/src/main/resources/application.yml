@@ -1,0 +1,17 @@
+server:
+  port: ${PORT:6001}
+
+spring:
+  application:
+    name:  001-eureka-server
+  security:
+    user:
+      name: admin
+      password: admin
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_SERVER:http://admin:admin@Eureka6001:6001/eureka}
+    fetch-registry: false
+    register-with-eureka: false

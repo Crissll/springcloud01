@@ -1,0 +1,12 @@
+server:
+  port: ${PORT:8002}
+
+spring:
+  application:
+    name: 002-eureka-licent-consumer
+
+eureka:
+  client:
+    service-url:
+       defaultZone: ${EUREKA_SERVER:http://admin:admin@localhost:6001/eureka}
+

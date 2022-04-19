@@ -1,0 +1,13 @@
+server:
+  port: ${PORT:7001}
+
+spring:
+  application:
+    name: eureka-licent-provide
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_SERVER:http://admin:admin@Eureka6001:6001/eureka}
+       #defaultZone: http://admin:admin@Eureka6001:6001/eureka , http://admin:admin@Eureka6002:6002/eureka
+
